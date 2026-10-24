@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacy Policy — Personal Finance Tracker</title>
+<style>
+  :root { color-scheme: light dark; --text: #222; --muted: #666; --line: #ddd; --bg: #fff; --link: #256abf; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e8e6e1; --muted: #a3a19b; --line: #3a3c42; --bg: #16171a; --link: #7fb2f0; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, "Segoe UI", Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2em; }
+  .updated { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  .table-scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy — Personal Finance Tracker</h1>
+<p class="updated">Last updated: October 23, 2026</p>
+<h2>Who and what this covers</h2>
+<p>Personal Finance Tracker is a personal budgeting app with exactly one user: its owner, Eric Malecki, who also built it. It runs on the owner's own computer and is not offered to anyone else.</p>
+<p>This policy explains what information the app handles, how it is used and protected, and who else is involved. Because the only user is the owner, all information it handles is the owner's own.</p>
+<h2>What information the app collects</h2>
+<p>The app holds only the owner's own financial records, from the owner's banks and from what the owner enters.</p>
+<ul>
+<li><strong>From the owner's banks, through Plaid, with the owner's permission:</strong> account names and types, balances, and posted transactions (date, amount, merchant, description).</li>
+<li><strong>Entered or imported by the owner:</strong> transactions, bank statement CSV files, categories, budgets, savings goals, recurring bills, insurance and HSA details, and household inventory.</li>
+<li><strong>Uploaded by the owner:</strong> receipts and documents (PDFs and photos).</li>
+<li><strong>Settings:</strong> reminder preferences and the email address reminders go to.</li>
+</ul>
+<p>The app never sees the owner's bank username or password: the owner signs in to the bank inside Plaid's own window. It does not collect location, contacts or browsing activity, and it has no analytics, tracking or advertising. The browser stores only two preferences: the selected profile and the light or dark theme.</p>
+<h2>How it is used</h2>
+<p>The information is used only to show the owner their own finances: budgets, spending, savings goals, debt payoff plans, net worth, tax reports and reminders.</p>
+<p>It is never sold, rented or traded, never used for advertising or marketing, and never given to data brokers.</p>
+<h2>Who it is shared with</h2>
+<p>Four services take part, each receiving only what its job needs; no one else receives the owner's information.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Service</th>
+<th>What it receives</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plaid</td>
+<td>The bank connection the owner approves; Plaid retrieves balances and transactions from the bank and passes them to the app</td>
+<td>Linking bank accounts. Plaid's handling is covered by its own <a href="https://plaid.com/legal/">end user privacy policy</a>.</td>
+</tr>
+<tr>
+<td>Microsoft OneDrive</td>
+<td>Encrypted backup files only, which Microsoft cannot read without the owner's key</td>
+<td>A copy kept off the computer</td>
+</tr>
+<tr>
+<td>Google (Gmail)</td>
+<td>Optional reminder emails to the owner's own address, such as bill names and due dates; dollar amounts only if the owner turns them on; never transactions, account numbers or balances</td>
+<td>Reminders</td>
+</tr>
+<tr>
+<td>Tailscale</td>
+<td>An encrypted connection between the owner's own devices; it does not see the app's data</td>
+<td>Using the app from the owner's phone</td>
+</tr>
+</tbody>
+</table></div>
+<p>The app's source code is stored on GitHub; no financial information is stored there. Information would be disclosed to anyone else only if the law required it.</p>
+<h2>How it is protected</h2>
+<p>The information stays on the owner's computer, and is encrypted whenever it leaves it.</p>
+<ul>
+<li>The app accepts connections only from the owner's own computer, and through Tailscale from the owner's own signed-in devices.</li>
+<li>Every connection to Plaid, Gmail and OneDrive, and between the owner's devices, is encrypted.</li>
+<li>Bank connection tokens and backups are stored encrypted, and the keys are kept apart from the data they unlock.</li>
+<li>No amounts, balances, account numbers or transactions are written to any log.</li>
+<li>The accounts involved (Plaid, GitHub, Google, Microsoft) use two-step login.</li>
+</ul>
+<p>The owner follows a written information security policy that sets these rules, patching deadlines and quarterly access reviews.</p>
+<h2>How long it is kept and how it is deleted</h2>
+<p>Records are kept until the owner deletes them; backups are kept for about 7 months.</p>
+<ul>
+<li><strong>Financial records:</strong> until the owner deletes them in the app.</li>
+<li><strong>Encrypted backups:</strong> the newest 30 weekly copies, about 7 months; older ones are deleted automatically.</li>
+<li><strong>Bank connections:</strong> until the owner disconnects a bank, which also removes the connection at Plaid and ends Plaid's access to that bank. Transactions already imported stay until the owner deletes them.</li>
+<li><strong>When the owner stops using the app:</strong> every bank is disconnected, and the database and all backups are deleted.</li>
+</ul>
+<h2>Changes and contact</h2>
+<p>Any change to this policy is posted here with a new date at the top. If anyone besides the owner is ever invited to use the app, this policy will be rewritten before they are.</p>
+<p>Questions: elmalecki@gmail.com.</p>
+
+</main>
+</body>
+</html>
